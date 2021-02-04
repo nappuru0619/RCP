@@ -1,0 +1,12 @@
+name: RCP
+version: @version@
+main: rcp_plugin.rcp.RCP
+api-version: 1.16
+
+commands:
+  rock:
+    usage: /rcp r
+  paper:
+    usage: /rcp p
+  scissors:
+    usage: /rcp c
