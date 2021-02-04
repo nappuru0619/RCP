@@ -14,7 +14,7 @@ public final class RCP extends JavaPlugin {
         // Plugin startup logic
         getLogger().info("RCPプラグインが起動しました");
 
-        String[] hand = {"グー", "チョキ", "パー"};
+        String[] hand = {"goo", "tyo", "paa"};
         //じゃんけんで出す手の配列
         Random r = new Random();
         //乱数を生成するメソッド
