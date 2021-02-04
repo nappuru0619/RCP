@@ -4,4 +4,6 @@ main: rcp_plugin.rcp.RCP
 api-version: 1.16
 
 commands:
-  usage: /rcp [your choice]
+  rcp:
+    usage: /rcp [your choice]
+    description: じゃんけんをするだけのプラグイン
