@@ -8,6 +8,7 @@ import java.util.Random;
 
 public final class RCP extends JavaPlugin {
     String enemy = "";
+    Random r;
 
     @Override
     public void onEnable() {
@@ -16,7 +17,7 @@ public final class RCP extends JavaPlugin {
 
         String[] hand = {"goo", "tyo", "paa"};
         //じゃんけんで出す手の配列
-        Random r = new Random();
+        r = new Random();
         //乱数を生成するメソッド
         enemy = hand[r.nextInt(3)];
         //相手の手をランダムで決める
@@ -57,5 +58,10 @@ public final class RCP extends JavaPlugin {
         }
 
         return true;
+    }
+
+    @Override
+    public void onDisable() {
+        getLogger().info("RCPが停止しました");
     }
 }
